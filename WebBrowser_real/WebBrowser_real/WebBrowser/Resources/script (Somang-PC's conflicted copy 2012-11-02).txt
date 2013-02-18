@@ -1,0 +1,35 @@
+var headID = document.getElementsByTagName('head')[0];
+var newScript = document.createElement('script');
+newScript.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'
+headID.appendChild(newScript)
+
+$('body').bind('click', function(e){ console.log(e.pageX.toString() + "+" + e.pageY.toString());});
+
+//ctrl+shift+j
+//http://69.164.219.86:8080/
+
+
+//$('body').bind('click',function(e){
+	//var domsArray = new Array();
+	//var optionArray = new Array();
+
+	//for (var i = 0; i < 2; i++){
+		//for (var j = 0; j < 2; j++){
+			//var a = document.elementFromPoint(e.clientX+i, e.clientY+j);
+			//var b = document.elementFromPoint(e.clientX-i, e.clientY+j);
+			//var c = document.elementFromPoint(e.clientX+i, e.clientY-j);
+			//var d = document.elementFromPoint(e.clientX-i, e.clientY-j);
+
+			//optionArray = [a,b,c,d];
+
+			//for (var k = 0; k < 4; k++){
+				//if (optionArray[k] && !(domsArray.indexOf(optionArray[k]))){
+					//domsArray.push(optionArray[k]);}
+			//}
+		//}
+	//}
+	
+	//for (var p = 0; p < domsArray.length; p++){
+		//console.log(domsArray[p]);
+	//}
+//});
